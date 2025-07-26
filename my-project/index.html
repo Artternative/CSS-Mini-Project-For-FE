@@ -6,50 +6,102 @@
     <title>CloneUI</title>
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="m-0 w-[100%] justify-center items-center bg-white">
-    <header class="flex flex-row w-[100%] h-[960px] bg-gradient-to-r from-amber-50 to-emerald-50">
-      <div class="w-[50%] h-[960]  flex flex-col "> 
-          <div class="flex flex-row items-center ml-[25%] h-[140px] ">
-            <img src="./src/assets/Group 5887.svg " class="w-[130px] h-[72px] " alt="logoEdu" />
-            <nav class="flex items-center ml-[25%] w-[300px] h-[21px]  ">
-              <ul class="flex justify-between space-x-20 w-full">
-                <li class="text-1xl font-semibold text-gray-800">Home</li>
-                <li class="text-1xl font-semibold text-gray-800">Admission</li>
-                <li class="text-1xl font-semibold text-gray-800">Academic</li>
-              </ul>
-            </nav>
-          </div>
-          <div class="flex flex-col items-start ml-[25%] w-[566px] h-[492px] mt-[10%] ">
-            <h1 class="text-8xl font-bold">Start Your <br> Future <br>Education </h1>
-            <h1 class=" mt-[10%] text-xl font-semibold text-gray-500">Credibly redefine distinctive total linkage vis-a-vis multifunc <br>data. Phosfluorescently impact goal-oriented strategic</h1>
-          </div>
-          <button class="text-1xl font-bold px-4 py-2 rounded-lg w-[162px] h-[64px] ml-[25%] mb-[15%] text-white bg-gradient-to-b from-[#FFA502] to-[#FFA503] shadow-md shadow-orange-400/50">Discovery More</button>
-   
+  <body class="bg-white ">
+    <header
+      id="hero"
+      class="min-h-screen bg-gradient-to-r from-amber-50 to-emerald-50 flex flex-col md:flex-row items-center"
+    >
+      <!-- Left Column -->
+      <div class="w-full md:w-1/2 flex flex-col justify-center px-4 md:px-16 space-y-8">
+        <div class="flex items-center justify-between">
+          <img
+            src="./src/assets/Group 5887.svg"
+            alt="logoEdu"
+            class="w-32 h-auto"
+          />
+          <nav>
+            <ul class="hidden sm:flex space-x-8 text-lg font-semibold  ">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Admission</a></li>
+              <li><a href="#">Academic</a></li>
+            </ul>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4 " class="size-8 self-center sm:hidden ">
+  <path fillRule="evenodd" d="M3 6a3 3 0 0 1 3-3h2.25a3 3 0 0 1 3 3v2.25a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6Zm9.75 0a3 3 0 0 1 3-3H18a3 3 0 0 1 3 3v2.25a3 3 0 0 1-3 3h-2.25a3 3 0 0 1-3-3V6ZM3 15.75a3 3 0 0 1 3-3h2.25a3 3 0 0 1 3 3V18a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-2.25Zm9.75 0a3 3 0 0 1 3-3H18a3 3 0 0 1 3 3V18a3 3 0 0 1-3 3h-2.25a3 3 0 0 1-3-3v-2.25Z" clipRule="evenodd" />
+</svg>
+          </nav>
+        </div>
+        
+        <div class="max-w-lg space-y-4">
+          <h1 class="text-4xl md:text-8xl font-bold leading-tight">
+            Start Your<br />
+            Future<br />
+            Education
+          </h1>
+          <p class="text-base md:text-xl text-gray-500">
+            Credibly redefine distinctive total linkage vis-à-vis multifunc data.
+            Phosfluorescently impact goal-oriented strategic.
+          </p>
+          <button
+            class="bg-gradient-to-b from-amber-400 to-amber-500 text-white font-bold py-3 px-6 rounded-lg shadow-md"
+          >
+            Discover More
+          </button>
+        </div>
       </div>
-      <div class="w-[50%] h-[960]  flex flex-col">
-          <div class="flex flex-col justify-center items-end mr-[20%] h-[140px] ">
-            <button class="text-1xl font-bold px-4 py-2 rounded-2xl w-[162px] h-[64px] mr-[15%] text-white bg-gradient-to-b from-[black] to-[gray] shadow-2xl shadow-black/30">Contact Now</button>
-          </div>
-          <div class="flex flex-col items-center justify-center h-[820px] mr-[20%]  relative ">
-            <img src="./src/assets/Ellipse 988.png" class="w-[675px] h-[675px] absolute " alt="heroImage" />
-            <div class="flex flex-row justify-between items-center place-content-between gap-110 mb-[40%]">
-              <div class="flex flex-col items-center justify-center gap-2.5 w-[200px] h-[111px] bg-white z-20 rounded-3xl shadow-xl relative">
-                <img src="./src/assets/Group 5900.svg" class="w-[70px] h-[70px] z-30 absolute -top-8" alt="icon1" />
-                <h1 class="text-xl font-bold  text-gray-800 z-20">Congratulation!</h1>
-                <h1 class="text-xl font-light text-gray-500 z-20">You got new email</h1>
-              </div>
-              <div class="flex flex-col items-center justify-center gap-2.5 w-[200px] h-[200px] bg-white z-20 rounded-3xl shadow-xl relative" >
-                <img src="./src/assets/Group 5898.svg" class="w-[70px] h-[70px]  z-30  absolute -top-8" alt="icon2" />
-                <h1 class="font-bold text-gray-800 text-6xl z-20">40+</h1>
-                <h1 class="text-xl font-semibold text-gray-400 z-20">Happy Students</h1>
-                <img src="./src/assets/Group 5895.svg" class="w-[152px] h-[46px] z-30  " alt="icon1" />
-              </div>
-            </div>
-            <img src="./src/assets/Group 5893.png" class="z-10 absolute mt-[20%] "/>
 
+      <!-- Right Column -->
+      <div class="w-full md:w-1/2 flex flex-col justify-between px-4 md:px-16 py-8 relative">
+        <div class="flex justify-end">
+          <button
+            class="bg-black text-white font-bold py-3 px-6 rounded-2xl shadow-2xl"
+          >
+            Contact Now
+          </button>
+        </div>
+
+        <div class="flex-1 flex flex-col items-center justify-center relative">
+          <img
+            src="./src/assets/Ellipse 988.png"
+            alt="heroBg"
+            class="w-3/4 md:w-full max-w-md absolute opacity-20"
+          />
+
+          <div class="flex flex-col md:flex-row gap-6 z-10">
+            <!-- Card 1 -->
+            <div
+              class="bg-white rounded-3xl shadow-xl p-6 flex flex-col items-center space-y-2 relative"
+            >
+              <img
+                src="./src/assets/Group 5900.svg"
+                alt="icon1"
+                class="w-16 -mt-8"
+              />
+              <h2 class="text-xl font-bold">Congratulations!</h2>
+              <p class="text-gray-500">You got new email</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="bg-white rounded-3xl shadow-xl p-6 flex flex-col items-center space-y-2 relative"
+            >
+              <img
+                src="./src/assets/Group 5898.svg"
+                alt="icon2"
+                class="w-16 -mt-8"
+              />
+              <h2 class="text-5xl font-bold">40+</h2>
+              <p class="text-gray-400">Happy Students</p>
+              <img
+                src="./src/assets/Group 5895.svg"
+                alt="badge"
+                class="mt-2"
+              />
+            </div>
           </div>
+        </div>
       </div>
     </header>
+
     <logocontent class="w-[100%] h-[342px] flex flex-col justify-center items-center mt-[5%] "> 
       <div class="w-[1420px] h-[195px]  flex flex-col justify-center items-center gap-10 "> 
         <h1 class="text-6xl font-extrabold font-serif text-gray-800">Trusted Companies</h1>
